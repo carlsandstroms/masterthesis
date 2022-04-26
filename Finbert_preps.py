@@ -49,6 +49,8 @@ data["neutral"] = ""
 
 #Calculate FinBert scores
 
+print("hello")
+
 for i in range (0,len(data)):
     ec=data.loc[i,'transcript_text']
     inputs = tokenizer(ec, padding = True, truncation = True, return_tensors='pt')

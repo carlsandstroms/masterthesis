@@ -1,3 +1,5 @@
+#Part 4
+
 import csv
 from itertools import count
 from re import A, S
@@ -40,7 +42,7 @@ import re
 tokenizer = AutoTokenizer.from_pretrained("ProsusAI/finbert")
 model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert")
 
-#Creat new columns fro teh scores
+#Creat new columns from the scores
 
 data = pd.read_csv("data_TT.csv")
 data["positive"] = ""
@@ -48,8 +50,6 @@ data["negative"] = ""
 data["neutral"] = ""
 
 #Calculate FinBert scores
-
-print("hello")
 
 for i in range (0,len(data)):
     ec=data.loc[i,'transcript_text']

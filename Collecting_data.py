@@ -1,3 +1,5 @@
+#Part 1
+
 from calendar import calendar
 from contextlib import closing
 import requests
@@ -125,6 +127,7 @@ df.head()
 df_closing_prices = pd.DataFrame()
 df_closing_idx = pd.DataFrame()
 
+#Import index data (SPCLEAN3)
 df_idx = pd.read_csv('SPClean3.csv',sep=',')
 idx_dict = {}
 for ind in df_idx.index:

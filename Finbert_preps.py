@@ -1,3 +1,40 @@
+import csv
+from itertools import count
+from re import A, S
+from unittest.util import sorted_list_difference
+from nltk.tokenize import sent_tokenize
+from nltk.tokenize import word_tokenize
+from nltk.tokenize.treebank import TreebankWordDetokenizer
+from nltk.stem import PorterStemmer
+from nltk.stem import SnowballStemmer
+import string 
+
+string.punctuation 
+import matplotlib.pyplot as plt
+import numpy as np
+from nltk import FreqDist
+nltk.download("stopwords")
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+
+import torch
+import transformers
+from   transformers import AutoTokenizer
+from   transformers import AutoModelForSequenceClassification
+
+import pandas as pd
+
+
+import requests
+import pandas as pd
+import numpy as np
+from bs4 import BeautifulSoup
+from pandas_datareader import data
+import os
+import re
+
 #Download required tools for FinBert
 
 tokenizer = AutoTokenizer.from_pretrained("ProsusAI/finbert")
